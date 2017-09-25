@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.79.0 commit date:2017-09-12, commit time:08:47, hash:8ef39d5c882</authoring_tool>
+    </contributor>
+    <created>2017-09-24T08:32:59</created>
+    <modified>2017-09-24T08:32:59</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects>
+    <effect id="Rock_003-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">49</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Rock_003-material" name="Rock_003">
+      <instance_effect url="#Rock_003-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Circle-mesh" name="Circle">
+      <mesh>
+        <source id="Circle-mesh-positions">
+          <float_array id="Circle-mesh-positions-array" count="48">-0.08988887 1.189679 -0.02491873 -0.6320691 0.4638194 0.1393693 -0.5147402 -0.6398414 0.07756042 -0.144505 -1.08315 0.01504909 0.4420697 -1.15107 0.05856424 0.6996614 -0.7003973 -0.0356239 0.7464445 0.3034847 -0.0360853 0.5428938 1.202938 -0.05266851 0.6474791 1.580295 0.5762498 -0.2374796 0.9479086 0.7803338 -0.5985366 -0.06764423 0.9764057 -0.3424162 -0.6939047 0.8710124 0.5293654 -1.012468 0.8856393 1.003574 -0.8776366 0.8437479 1.014408 -0.3165559 0.7598153 0.9604492 1.03849 0.6665703</float_array>
+          <technique_common>
+            <accessor source="#Circle-mesh-positions-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Circle-mesh-normals">
+          <float_array id="Circle-mesh-normals-array" count="144">-0.05978137 -0.0406593 -0.9973832 -0.05868488 -0.002732217 -0.9982728 -0.1032983 0.0395323 -0.9938645 0.04062998 0.1502814 0.9878081 0.08668655 0.0911386 0.9920581 0.09444904 -0.0465666 0.9944401 0.936982 -0.05252748 -0.3454064 0.9374905 -0.05743747 -0.3432381 0.938556 -0.06871634 -0.338217 -0.2336558 -0.937742 0.2569922 -0.2572104 -0.9266021 0.2743199 -0.3292121 -0.8859201 0.3267492 -0.9779256 0.1564486 0.1385115 -0.9885401 0.1063556 0.1071309 -0.88975 0.3683693 0.269535 0.9257883 0.08302694 -0.3688125 0.9131271 0.1095346 -0.3926845 0.9514665 0.01674199 -0.3072966 0.7110365 -0.6954026 -0.1041268 0.4716328 -0.8580015 -0.2034598 0.8674229 -0.4975044 -0.008182227 -0.808476 -0.5724616 0.1365813 -0.8666953 -0.4738357 0.1559455 -0.9020205 -0.3973097 0.1688317 -0.6748175 0.7317132 0.09600651 -0.6869156 0.7210685 0.09059315 -0.5529023 0.8205296 0.1450181 0.2705295 0.8050048 -0.5279974 0.6066215 0.6331439 -0.4807694 0.8255426 0.4127042 -0.3849087 -0.1293668 -0.02757334 -0.9912135 -0.1025611 -0.02201533 -0.9944831 -0.1034112 -0.08510583 -0.990991 -0.04320442 -0.02818971 -0.9986685 0.04558378 -0.2292595 -0.9722975 0.07696545 0.2070441 0.9752995 0.1147213 0.1291478 0.9849669 0.08398795 0.1300513 0.9879437 0.1370419 0.02639579 0.9902135 0.04551124 0.1469319 0.9880992 0.9360092 -0.0437808 -0.3492422 -0.1261478 -0.9761127 0.1768919 -0.9942057 -0.1042175 -0.02634245 0.8674721 0.1878199 -0.460669 0.2410119 -0.9318844 -0.2711175 -0.7536514 -0.6462934 0.1196437 -0.7968615 0.6031453 0.03503632 -0.04034262 0.859737 -0.5091412</float_array>
+          <technique_common>
+            <accessor source="#Circle-mesh-normals-array" count="48" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Circle-mesh-vertices">
+          <input semantic="POSITION" source="#Circle-mesh-positions"/>
+        </vertices>
+        <triangles material="Rock_003-material" count="28">
+          <input semantic="VERTEX" source="#Circle-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Circle-mesh-normals" offset="1"/>
+          <p>5 0 3 1 2 2 12 3 14 4 11 5 5 6 14 7 13 8 3 9 12 10 11 11 1 12 10 13 9 14 6 15 15 16 14 17 5 18 12 19 4 20 2 21 11 22 10 23 0 24 9 25 8 26 7 27 8 28 15 29 2 2 1 30 6 31 0 32 7 33 6 31 6 31 5 0 2 2 4 34 3 1 5 0 1 30 0 32 6 31 8 35 9 36 15 37 10 38 11 5 14 4 12 3 13 39 14 4 14 4 15 37 9 36 9 36 10 38 14 4 5 6 6 40 14 7 3 9 4 41 12 10 1 12 2 42 10 13 6 15 7 43 15 16 5 18 13 44 12 19 2 21 3 45 11 22 0 24 1 46 9 25 7 27 0 47 8 28</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Rock1" name="Rock1" type="NODE">
+        <matrix sid="transform">1 0 0 -0.257514 0 1 1.62921e-7 -1.351053 0 -1.62921e-7 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Circle-mesh" name="Rock1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Rock_003-material" target="#Rock_003-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

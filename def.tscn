@@ -1,0 +1,85 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://env.tres" type="Environment" id=1]
+[ext_resource path="res://treetscn/oaktree2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://trunkscn/deadoak2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://treetscn/oaktree1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://treetscn/sprucetree1.tscn" type="PackedScene" id=5]
+[ext_resource path="res://treetscn/oaktree3.tscn" type="PackedScene" id=6]
+[ext_resource path="res://treetscn/sprucetree2.tscn" type="PackedScene" id=7]
+[ext_resource path="res://terrain.tscn" type="PackedScene" id=8]
+
+[node name="Node" type="Node"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+
+environment = ExtResource( 1 )
+
+[node name="oaktree2" parent="." instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9324, 3.16571, 6.38376 )
+
+[node name="Scene Root" parent="." instance=ExtResource( 3 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.21079, -0.0846878, -13.0519 )
+
+[node name="oaktree1" parent="." instance=ExtResource( 4 )]
+
+transform = Transform( 1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, -1.34234, -0.746109, -28.1223 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="sprucetree1" parent="." instance=ExtResource( 5 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.05771, 0.0363431, 6.1086 )
+
+[node name="oaktree3" parent="." instance=ExtResource( 6 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.2779, -2.13067, -8.89085 )
+
+[node name="OmniLight" type="OmniLight" parent="."]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 31.7881, 0 )
+visible = false
+layers = 1
+light_color = Color( 1, 1, 1, 1 )
+light_energy = 1.0
+light_negative = false
+light_specular = 0.5
+light_cull_mask = -1
+shadow_enabled = false
+shadow_color = Color( 0, 0, 0, 1 )
+shadow_bias = 0.15
+shadow_contact = 0.0
+shadow_reverse_cull_face = false
+editor_only = false
+omni_range = 138.878
+omni_attenuation = 1.0
+omni_shadow_mode = 1
+omni_shadow_detail = 1
+
+[node name="Camera" type="Camera" parent="."]
+
+transform = Transform( -0.75125, -0.0149817, 0.659848, 0.00462916, 0.999598, 0.0279655, -0.660002, 0.0240635, -0.750879, 26.4221, 15.1673, -25.0263 )
+projection = 0
+fov = 90.0
+near = 0.1
+far = 100.0
+keep_aspect = 1
+current = false
+cull_mask = 1048575
+environment = ExtResource( 1 )
+h_offset = 0.0
+v_offset = 0.0
+doppler/tracking = 0
+_sections_unfolded = [ "Transform" ]
+
+[node name="Scene Root2" parent="." instance=ExtResource( 7 )]
+
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 3.15544, 1.29736, 3.84909 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="terrain" parent="." instance=ExtResource( 8 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 37.8925, 0.0558128, -6.28161 )
+
+
